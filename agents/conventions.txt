@@ -1,0 +1,111 @@
+Cards are ordered from left (lowest index) to right (highest index). Here are some helpful strategy conventions to reach a higher score:
+
+### The Good Touch Principle
+
+- When cluing cards, we follow _Good Touch Principle_ - **we only touch (clue) cards that will eventually be played**.
+  - It would be a _Bad Touch_ if someone touched a card that was already played on the stacks or was already clued in someone else's hand.
+- _Good Touch Principle_ is a powerful building block for logic and reasoning. If everyone only touches good cards, then players can greatly narrow down the possibilities for the clued cards in their hand!
+
+### Clue Types
+
+- Fundamentally, Hanabi is all about giving clues. Different groups have different definitions of what clues should mean.
+- We assume that clues always have a specific meaning.
+- Players are only allowed to give two types of clues:
+    + a Play Clue (meaning to play the focused card)
+    + a Save Clue (meaning to save the focused card for later)
+- If players cannot give a valid Play Clue or a valid Save Clue, then they must discard.
+
+### Minimum Clue Value Principle
+
+- Usually, players only discard when they have nothing else to do. But don't take this the wrong way.
+- Players are **not allowed** to just clue any card:
+  - Players are **only allowed** to give _Play Clues_ to actual playable cards.
+  - Players are **only allowed** to give _Save Clues_ to the specific cards outlined in the _Save Principle_ section.
+- If players cannot give a legal _Play Clue_ or _Save Clue_, then they **must discard**.
+- We formally express this concept as _Minimum Clue Value Principle_: **all clues must get at least one previously unclued card played or saved**.
+
+### Save Principle
+
+- Earlier, we explained that the team must save certain types of cards with _Save Clues_.
+- But above and beyond this, we also agree that we must "get" all of the playable cards. In order words, **we don't let each other discard playable cards!**
+- So, the **full list** of what we must **not discard** is the following:
+  - All 5's
+  - Unique 2's (i.e. 2's that are the only copy currently visible)
+  - Critical cards (i.e. cards that have all other copies discarded)
+  - Unique playable cards (i.e. playable cards that are the only copy currently visible)
+- Not letting each other discard important cards is called _Save Principle_ and **it is the most important principle of them all**. You are allowed to **break any other principle or rule** in order to prevent a card in this list from being discarded. In fact, sometimes you will have to violate _Good Touch Principle_ in order to save a specific card, and that is okay.
+
+### New Cards
+
+- When determining the _focus_ of a clue, you need to look for "new" cards.
+- New cards are specifically defined as **cards that are touched by a clue that did not have any clues "on" them already**.
+
+### Determining the Focus: 4 Steps
+
+So, when two or more cards are touched by a clue, which card is focused?
+
+1. If no cards are new, then **the focus is on the leftmost re-touched card**.
+2. If only one card is new, then **the focus is on the new card**.
+3. If two or more cards are new, and one of them was on chop, then **the focus is on the chop**.
+4. If two or more cards are new, and none of them were on chop, then **the focus is on the leftmost new card**.
+
+
+### Chop
+
+- When players have to discard, they typically discard their rightmost unclued card.
+- A player's chop is formally defined as **the next unclued card that they would discard if they had nothing else to do**.
+- If a player has a clued card that is known to be useless, then they will typically **discard the useless card first**, before discarding their chop. (But the useless card does **not** count as the chop - their chop remains the rightmost unclued card.)
+
+### The Definition of Playable
+
+- When we say that an unclued card is currently _playable_, we do **not** mean that the player would be able to play it right this instant. If an unclued card is _playable_, then what we really mean is that it would be legal for someone to give either a _Play Clue_ **or** a _Delayed Play Clue_ to the card.
+- In other words, if an unclued _playable_ card was given a _Delayed Play Clue_, that card would eventually play on the stack without any additional clues needing to be given by anyone else - all of the in-between cards, if any, would be present and accounted for at the moment that the _Play Clue_ was given.
+
+### One-Away-From-Playable Cards
+
+- As noted in the previous section, sometimes unclued cards happen to be _playable_.
+- Additionally, sometimes unclued cards happen to be _one-away-from-playable_.
+- A card is _one-away-from-playable_ if only one other card would need to be given a _Play Clue_ or a _Delayed Play Clue_ in order to make the card _playable_.
+- For example, in a 3-player game:
+  - No red cards are played on the stacks.
+  - No player has any red 1's in their hand.
+  - Bob has a red 2 with a number 2 clue on it. (It was saved with a _2 Save_ clue earlier on.)
+  - Cathy has an unclued red 3 in her hand.
+  - Alice knows that the unclued red 3 is currently _one-away-from-playable_, because there is only one card needed in order to make it _playable_ - the red 1.
+- Players are **not** allowed to give _Play Clues_ or _Delayed Play Clues_ to _one-away-from-playable_ cards - they are not playable yet!
+- Players are **not** allowed to give _Save Clues_ to _one-away-from-playable_ cards - unless they also happen to be critical.
+
+### Save Clues
+
+- You are **only** allowed to give a _Save Clue_ to a card that is on chop.
+  - This means that if a clue focuses a non-chop card, then it must be a _Play Clue_!
+- You are **not** allowed to give a _Save Clue_ to any card you want. You are **only** allowed to give a _Save Clue_ on these specific cards:
+  1. 5's (with a number 5 clue, as a _5 Save_)
+  1. 2's (with a number 2 clue, as a _2 Save_)
+  1. Critical cards (with either color or number)
+- Additionally, everyone in the group also agrees to never let anyone discard a (unique) playable card. However, a clue to a unique playable card is defined as a _Play Clue_, not a _Save Clue_.
+
+### Clue Focus
+
+There is a 4-step process for determining the focus of a clue:
+
+1. If no cards are new, then **the focus is on the leftmost re-touched card**.
+2. If only one card is new, then **the focus is on the new card**.
+3. If two or more cards are new, and one of them was on chop, then **the focus is on the chop**.
+4. If two or more cards are new, and none of them were on chop, then **the focus is on the leftmost new card**.
+
+
+### The Early Game
+
+- The _Early Game_ is the period of time before someone discards for the first time.
+- Players **must** "extinguish" all of the available _Play Clues_ and _Save Clues_ on the board before ending the _Early Game_.
+  - "extinguishing" all the _Play Clues_ does **not** include giving _Tempo Clues_. _Tempo Clues_ do not meet _Minimum Clue Value Principle_, so in general, they should almost never be given.
+
+### The 2 Save
+
+- A _2 Save_ is when someone uses a number 2 clue to clue a previously-unclued 2 on someone's chop. (Everyone agrees that this is just a _Save Clue_ instead of a _Play Clue_.)
+- By definition, you can only perform a _2 Save_ with a number clue.
+  - If the other copy of the 2 is in the discard pile, then you can save it with color. But that would not be a _2 Save_, that would just be a _Save Clue_ on a critical card.
+
+
+
